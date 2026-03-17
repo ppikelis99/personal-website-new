@@ -6,13 +6,12 @@ export default function Contact() {
     e.preventDefault();
     const formData = new FormData(e.target);
         try {
-            const response = await fetch('./vv/Contact.php', {
+            const response = await fetch('./Contact.php', {
                 method: 'POST',
                 body: formData
             });
 
             const result = await response.text();
-            alert(result);
             alert("Message sent!");
             e.target.reset();
         } catch (error) {
