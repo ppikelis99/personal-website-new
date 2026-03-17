@@ -1,0 +1,48 @@
+{
+    "projects": [
+        {
+        "id": 1,
+        "title": "EShop",
+        "description": "A modern, multi-page e-commerce website designed for a seamless shopping experience. Users can browse products, manage their shopping cart, and view detailed product information in real-time.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "links": {
+            "live": "https://pauliusp.lt/eshop/",
+            "repo": "https://github.com/ppikelis99/eShop"
+        },
+        "image": "https://raw.githubusercontent.com/ppikelis99/eShop/main/images/MinimalStore.png"
+        },
+        {
+        "id": 2,
+        "title": "Single page application",
+        "description": "Responsive single-page application (SPA) This project focuses on complex layouts, interactive elements, and clean HTML.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "links": {
+            "live": "https://pauliusp.lt/spa/",
+            "repo": "https://github.com/ppikelis99/Single-Page-Application"
+        },
+        "image": "https://raw.githubusercontent.com/ppikelis99/Single-Page-Application/main/images/SPA.png"
+        },
+        {
+        "id": 3,
+        "title": "Personal website (oldest version)",
+        "description": "A modern, responsive personal portfolio website showcasing my web development projects, skills, and experience.",
+        "technologies": ["React", "Bootstrap", "HTML", "CSS", "JavaScript"],
+        "links": {
+            "live": "https://task-manager-demo.lt",
+            "repo": "https://github.com/ppikelis99/personal-website"
+        },
+        "image": "https://raw.githubusercontent.com/ppikelis99/personal-website/main/src/Components/images/Main%20Page.png"
+        },
+        {
+        "id": 4,
+        "title": "Personal website (newest version)",
+        "description": "A modern, responsive personal portfolio website. Fully compatible with all cross device compatibility. A little json for future showcase",
+        "technologies": ["React", "Bootstrap", "HTML", "CSS", "JavaScript"],
+        "links": {
+            "live": "https://task-manager-demo.lt",
+            "repo": "https://github.com/ppikelis99/personal-website"
+        },
+        "image": ""
+        }
+    ]
+}

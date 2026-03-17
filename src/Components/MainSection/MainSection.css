@@ -1,0 +1,197 @@
+@import url(../Variables.css);
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 80vh;
+}
+.heroContent {
+    width: 100%;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.heroTitle {
+    width: 300px;
+    font-size: 30px;
+}
+.heroTitle h1 {
+    margin-bottom: 0;
+}
+.heroDeveloper {
+    background: linear-gradient(90deg, var(--gradientColorFirst), var(--gradientColorSecond), var(--gradientColorThird)) 100% / 170%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    opacity: 0;
+    animation: textIn 1s forwards;
+}
+@keyframes textIn {
+    to {
+        opacity: 1;
+    }
+}
+.heroSubtitle {
+    padding: 5px;
+}
+.heroSubtitle span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(5px);
+    animation: revealLetter 0.5s forwards;
+    animation-delay: calc(var(--index) * 0.1s);
+}
+@keyframes revealLetter {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.heroSkills {
+    display: flex;
+    gap: 10px;
+}
+.heroSkills p {
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: var(--skillsBackground);
+    transform:rotate(3deg);
+    transition: all 0.5s;
+}
+.heroSkills p:hover {
+    background-color: var(--skillsBackgroundHover);
+    transform:rotate(0);
+}
+.heroDescription {
+    text-align: justify;
+    width: 90vw;
+}
+.heroActions {
+    display: flex;
+    gap: 10px;
+}
+.heroActions a {
+    font-size: 20px;
+    padding: 10px;
+    color: var(--textColor);
+    text-decoration: none;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: var(--skillsBackground);
+}
+.heroActions a:hover, .aboutAction:hover {
+    background-color: var(--skillsBackgroundHover);
+}
+.heroSocials {
+    display: flex;
+    justify-content: center;
+}
+.heroSocials img {
+    padding: 10px;
+    width: 50px;
+}
+.lottieAnim {
+    width: 200px;
+}
+.aboutAction {
+    font-size: 20px;
+    padding: 10px;
+    color: var(--textColor);
+    text-decoration: none;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: fit-content;
+    background-color: var(--skillsBackground);
+}
+
+.about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutContainer {
+    border: 1px solid rgb(88, 88, 88);
+    border-radius: 5px;
+    background-color: var(--skillsBackground);
+    width: 100vw;
+    min-height: 500px;
+}
+.aboutTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aboutDescription {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: stretch;
+}
+.aboutDescriptionBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+.aboutAvatar {
+    height: 300px;
+    border-radius: 320px;
+}
+.aboutFullName, .aboutTitle h1 {
+    background: linear-gradient(90deg, var(--gradientColorFirst), var(--gradientColorSecond), var(--gradientColorThird)) 100% / 170%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.aboutStatus {
+    color: orange;
+}
+.lottieAnim {
+    width: 300px;
+    height: 300px;
+}
+.whoAm {
+    font-weight: bold;
+    font-size: 29px;
+    margin: 0;
+}
+
+@media only screen and (min-width: 786px) {
+    .lottieAnim {
+        width: 500px;
+        height: 550px;
+    }
+    .lottieBox {
+        display: flex;
+        width: auto;
+    }
+    .aboutDescription {
+        width: 800px;
+    }
+    .aboutDescriptionBox {
+        flex-direction: row;
+    }
+    .heroContent {
+        width: 400px;
+    }
+    .heroDescription {
+        width: 500px;
+    }
+    .heroSkills {
+        width: 300px;
+    }
+    .aboutContainer {
+        max-width: 800px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .hero {
+        flex-direction: row;
+    }
+}

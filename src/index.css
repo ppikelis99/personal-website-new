@@ -1,0 +1,14 @@
+@import url(Components/Variables.css);
+body {
+    height: 100vh;
+    margin: 0;
+    color: white;
+    background-color: #030014;
+    background-image:
+    radial-gradient(ellipse at left top, #A37EE973 0%, transparent 60%),
+    radial-gradient(ellipse at left bottom, #744E8B4D 0%, transparent 60%),
+    radial-gradient(ellipse at right top, #40C6EBA6 0%, transparent 80%),
+    radial-gradient(ellipse at right bottom, #5D80BD40 0%, transparent 60%);
+    background-attachment: fixed;
+    font-family: 'Inter', sans-serif;
+}

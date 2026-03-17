@@ -1,0 +1,18 @@
+:root {
+    --backgroundColorTopRight: #6a2d8d;
+    --colorText: #ffffff;
+    --hamburgerColor: #ffffff;
+    --skillsBackground: #5D80BD40;
+    --skillsBackgroundHover: #6489c985;
+
+    --gradientColorFirst: #40C6EBA6;
+    --gradientColorSecond: #A37EE973;
+    --gradientColorThird: #40C6EBA6;
+
+    --gradientColorFirstFullBg: #1a5666;
+    --gradientColorSecondFullBg: #60488b;
+    --gradientColorThirdFullBg: #2986a0;
+
+    --underlineColor: #A37EE973;
+    --headerBackground: #6489c95b;
+}
