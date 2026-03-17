@@ -30,8 +30,8 @@ export default function MainSection() {
                         <p>SQLite</p>
                     </div>
                     <div className='heroActions'>
-                        <a href=''>Projects</a>
-                        <a href=''>Contact</a>
+                        <a href='https://pauliusp.lt/portfolio'>Projects</a>
+                        <a href='https://pauliusp.lt/contact'>Contact</a>
                     </div>
                 </div>
                 <div className='lottieBox'>
@@ -39,8 +39,8 @@ export default function MainSection() {
                 </div>
             </section>
             <div className='heroSocials'>
-                <img src={github} alt="" />
-                <img src={linkedin} alt="" />
+                <a href="https://github.com/ppikelis99?tab=repositories"><img src={github} alt="" /></a>
+                <a href="https://www.linkedin.com/in/paulius-pikelis-755a16381/"><img src={linkedin} alt="" /></a>
             </div>
             <section className='about'>
                 <div className='aboutContainer'>
