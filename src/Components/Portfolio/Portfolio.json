@@ -28,7 +28,7 @@
         "description": "A modern, responsive personal portfolio website showcasing my web development projects, skills, and experience.",
         "technologies": ["React", "Bootstrap", "HTML", "CSS", "JavaScript"],
         "links": {
-            "live": "https://task-manager-demo.lt",
+            "live": "https://pauliusp.lt/oldportfolio/",
             "repo": "https://github.com/ppikelis99/personal-website"
         },
         "image": "https://raw.githubusercontent.com/ppikelis99/personal-website/main/src/Components/images/Main%20Page.png"
@@ -37,12 +37,12 @@
         "id": 4,
         "title": "Personal website (newest version)",
         "description": "A modern, responsive personal portfolio website. Fully compatible with all cross device compatibility. A little json for future showcase",
-        "technologies": ["React", "Bootstrap", "HTML", "CSS", "JavaScript"],
+        "technologies": ["React", "Json", "HTML", "CSS", "JavaScript"],
         "links": {
-            "live": "https://task-manager-demo.lt",
-            "repo": "https://github.com/ppikelis99/personal-website"
+            "live": "https://pauliusp.lt",
+            "repo": "https://github.com/ppikelis99/personal-website-new/tree/main"
         },
-        "image": ""
+        "image": "https://raw.githubusercontent.com/ppikelis99/personal-website-new/main/src/images/MainPortfolioPage.png"
         }
     ]
 }
