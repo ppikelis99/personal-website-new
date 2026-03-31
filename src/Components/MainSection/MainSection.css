@@ -16,9 +16,7 @@
     width: 300px;
     font-size: 30px;
 }
-.heroTitle h1 {
-    margin-bottom: 0;
-}
+.heroTitle h1 {margin-bottom: 0;}
 .heroDeveloper {
     background: linear-gradient(90deg, var(--gradientColorFirst), var(--gradientColorSecond), var(--gradientColorThird)) 100% / 170%;
     -webkit-background-clip: text;
@@ -32,9 +30,7 @@
         opacity: 1;
     }
 }
-.heroSubtitle {
-    padding: 5px;
-}
+.heroSubtitle {padding: 5px;}
 .heroSubtitle span {
     display: inline-block;
     opacity: 0;
@@ -53,7 +49,7 @@
     gap: 10px;
 }
 .heroSkills p {
-    padding: 5px;
+    padding: 3px;
     border: 1px solid grey;
     border-radius: 10px;
     background-color: var(--skillsBackground);
@@ -72,7 +68,7 @@
     display: flex;
     gap: 10px;
 }
-.heroActions a {
+.buttonsAnim {
     font-size: 20px;
     padding: 10px;
     color: var(--textColor);
@@ -80,10 +76,9 @@
     border: 1px solid grey;
     border-radius: 5px;
     background-color: var(--skillsBackground);
+    transition: all 0.5s;
 }
-.heroActions a:hover, .aboutAction:hover {
-    background-color: var(--skillsBackgroundHover);
-}
+.buttonsAnim:hover {background-color: var(--skillsBackgroundHover);}
 .heroSocials {
     display: flex;
     justify-content: center;
@@ -92,9 +87,7 @@
     padding: 10px;
     width: 50px;
 }
-.lottieAnim {
-    width: 200px;
-}
+.lottieAnim {width: 200px;}
 .aboutAction {
     font-size: 20px;
     padding: 10px;
@@ -112,12 +105,22 @@
     align-items: center;
     justify-content: center;
 }
-.aboutContainer {
+.aboutAvatar, .aboutContainer {
     border: 1px solid rgb(88, 88, 88);
+    transition: all 0.5s;
+}
+.aboutContainer {
     border-radius: 5px;
     background-color: var(--skillsBackground);
     width: 100vw;
     min-height: 500px;
+}
+.aboutAvatar {
+    height: 300px;
+    border-radius: 320px;
+}
+.aboutContainer:hover, .aboutAvatar:hover {
+    box-shadow: 0 0 10px var(--shadowColor);
 }
 .aboutTitle {
     display: flex;
@@ -139,19 +142,13 @@
     gap: 10px;
     padding: 20px;
 }
-.aboutAvatar {
-    height: 300px;
-    border-radius: 320px;
-}
 .aboutFullName, .aboutTitle h1 {
     background: linear-gradient(90deg, var(--gradientColorFirst), var(--gradientColorSecond), var(--gradientColorThird)) 100% / 170%;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
-.aboutStatus {
-    color: orange;
-}
+.aboutStatus {color: orange;}
 .lottieAnim {
     width: 300px;
     height: 300px;
@@ -171,27 +168,13 @@
         display: flex;
         width: auto;
     }
-    .aboutDescription {
-        width: 800px;
-    }
-    .aboutDescriptionBox {
-        flex-direction: row;
-    }
-    .heroContent {
-        width: 400px;
-    }
-    .heroDescription {
-        width: 500px;
-    }
-    .heroSkills {
-        width: 300px;
-    }
-    .aboutContainer {
-        max-width: 800px;
-    }
+    .aboutDescription {width: 800px;}
+    .aboutDescriptionBox {flex-direction: row;}
+    .heroContent {width: 400px;}
+    .heroDescription {width: 500px;}
+    .heroSkills {width: 300px;}
+    .aboutContainer {max-width: 800px;}
 }
 @media only screen and (min-width: 1024px) {
-    .hero {
-        flex-direction: row;
-    }
+    .hero {flex-direction: row;}
 }

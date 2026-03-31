@@ -6,9 +6,11 @@ import projectData from './Portfolio.json'
 export default function Portfolio() {
     return(
         <section className='portfolioBox'>
-            <DotLottieReact src={briefCase} className='briefCaseAnim' loop autoplay/>
-            <h1>Portfolio Showcase</h1>
-            <p>Explore my journey through projects</p>
+            <div className='showcaseContainer'>
+                <DotLottieReact src={briefCase} className='briefCaseAnim' loop autoplay/>
+                <h1>Portfolio Showcase</h1>
+                <p>Explore my journey through projects</p>
+            </div>
             <div className='portfolioBoundries'>
                 <div className='portfolioTable'>
                 {projectData.projects.map(project => (

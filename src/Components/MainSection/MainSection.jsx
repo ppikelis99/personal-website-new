@@ -4,6 +4,7 @@ import linkedin from '../../images/linkedin.png'
 import avatar from '../../images/avatar.jpg'
 import { DotLottieReact } from '@lottiefiles/dotlottie-react'
 import webAnim from '../../assets/Webdev.lottie?url'
+import { NavLink } from 'react-router-dom'
 
 export default function MainSection() {
     const subtitle = 'FastTrack Student'
@@ -30,8 +31,8 @@ export default function MainSection() {
                         <p>SQLite</p>
                     </div>
                     <div className='heroActions'>
-                        <a href='https://pauliusp.lt/portfolio'>Projects</a>
-                        <a href='https://pauliusp.lt/contact'>Contact</a>
+                        <NavLink className='buttonsAnim' to='/portfolio'>Projects</NavLink>
+                        <NavLink className='buttonsAnim' to='/contact'>Contact</NavLink>
                     </div>
                 </div>
                 <div className='lottieBox'>
@@ -54,7 +55,7 @@ export default function MainSection() {
                             <p>I am a motivated Junior Front-End Engineer who completed intensive, instructor-led
                             programming courses (364 hours) and continues to deepen my knowledge independently.
                             After completing mandatory military service, I decided to return to IT field I had previously stepped away from due to a lack of IT opportunities in my hometown.</p>
-                            <a className='aboutAction' href="">View my Projects</a>
+                            <NavLink to='/portfolio' className='aboutAction buttonsAnim' href="">View my Projects</NavLink>
                         </div>
                         <img className='aboutAvatar' src={avatar} alt="" />
                     </div>

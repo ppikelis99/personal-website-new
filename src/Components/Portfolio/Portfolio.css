@@ -4,11 +4,29 @@
     flex-direction: column;
     align-items: center;
 }
+.showcaseContainer {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    background-color: var(--skillsBackgroundHover);
+    border-radius: 10px;
+    transform: rotate(1deg);
+    transition: all 0.5s;
+}
+.showcaseContainer h1 {
+    margin: 0;
+}
+.showcaseContainer:hover {
+    box-shadow: 0 0 10px var(--shadowColor);
+    transform: rotate(0);
+}
 .briefCaseAnim {
-    padding-top: 50px;
     height: 200px;
 }
 .portfolioTable {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,11 +41,18 @@
     background-color: var(--skillsBackground);
     border-radius: 10px;
     margin: 10px;
+    transition: all 0.2s;
+}
+.projectTable:hover {
+    box-shadow: 0 0 10px var(--shadowColor);
 }
 .projectImg {
     width: 98vw;
-    padding: 10px;
+    height: 250px;
     box-sizing: border-box;
+    border: 1px solid rgba(107, 105, 105, 0.452);
+    transition: all 0.3s;
+    border-radius: 10px;
 }
 .projectTech {
     display: flex;
@@ -48,6 +73,10 @@
     border: 1px solid grey;
     border-radius: 5px;
     background-color: var(--skillsBackground);
+    transition: all 0.3s;
+}
+.projectLink:hover {
+    background-color: var(--skillsBackgroundHover);
 }
 .projectLinks {
     display: flex;
@@ -55,8 +84,16 @@
     gap: 10px;
     padding: 10px;
 }
+.projectInfo {
+    box-sizing: border-box;
+    min-height: 580px;
+    padding: 5px;
+}
 
 @media only screen and (min-width: 786px) {
+    .projectInfo {
+        height: 800px;
+    }
     .portfolioTable {
         flex-direction: row;
         align-items: stretch;
@@ -65,8 +102,14 @@
         max-width: 1700px;
     }
     .projectTable {width: calc(50% - 30px);}
-    .projectImg {width: 100%;}
-
+    .projectImg {
+        width: 98%;
+        min-height: 500px;
+    }
+    .projectImg:hover {
+        min-height: 510px;
+        width: 100%;
+    }
     .portfolioBoundries {
         width: 100%;
         display: flex;

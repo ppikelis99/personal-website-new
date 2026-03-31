@@ -2,6 +2,7 @@
 .headerMenu {
     display: flex;
     justify-content: space-between;
+    padding: 5px;
     align-items: center;
     height: 50px;
     width: 100vw;
@@ -9,13 +10,9 @@
     top: 0px;
     transition: all 0.3s ease;
     z-index: 1;
+    box-sizing: border-box;
 }
-.headerMenu.scrolled {
-    background-color: var(--headerBackground);
-}
-.mainLogo {
-    padding: 0 20px;
-}
+.headerMenu.scrolled {background-color: var(--headerBackground);}
 .mainLogo h2 {
     width: 100px;
     background: linear-gradient(45deg, var(--gradientColorSecond), var(--gradientColorFirst), var(--gradientColorSecond));
@@ -23,6 +20,7 @@
     background-clip: text;
     color: transparent;
 }
+.textLogo {text-decoration: none;}
 .linkBox {
     display: flex;
     flex-direction: column;
@@ -45,22 +43,6 @@
 .linkBox li {
     height: 50px;
     font-size: 30px;
-}
-.menuLink {
-    padding: 20px;
-    color: var(--colorText);
-    text-decoration: none;
-    font-weight: bold;
-}
-.menuLink:hover, .menuLink.active {
-    text-decoration: underline;
-    text-decoration-color: var(--underlineColor);
-    text-underline-offset: 10px;
-    text-decoration-thickness: 2px;
-    background: var(--colorText);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
 }
 
 /* Burger-Menu */
@@ -99,13 +81,13 @@
 
 @media only screen and (min-width: 786px) {
     .headerMenu {
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 20px;
     }
     .hamMenu {
         display: none;
     }
     .mainLogo {
-        width: 48%;
         padding: 0 20px;
     }
     .linkBox {
