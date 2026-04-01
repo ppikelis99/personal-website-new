@@ -45,6 +45,7 @@
     margin: 20px;
     border: 1px solid black;
     border-radius: 10px;
+    box-sizing: border-box;
     background: linear-gradient(90deg, var(--gradientColorFirst), var(--gradientColorSecond), var(--gradientColorThird)) 100% / 170%;
 }
 .contactForm {
