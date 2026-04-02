@@ -9,13 +9,16 @@
     display: flex;
     flex-direction: column;
     border: 1px solid black;
-    padding: 20px;
+    box-sizing: border-box;
+    margin: 20px;
+    padding: 10px;
     border-radius: 10px;
     transform:rotate(0.5deg);
     transition: all 0.5s;
     align-items: center;
     background: linear-gradient(90deg, var(--gradientColorFirst), var(--gradientColorSecond), var(--gradientColorThird)) 100% / 170%;
     height: 80px;
+    height: fit-content;
 }
 .contactInfo:hover {
     transform:rotate(0);
@@ -40,8 +43,8 @@
     padding: 10px;
 }
 .formBox {
-    width: 400px;
-    padding: 30px;
+    max-width: 400px;
+    padding: 10px;
     margin: 20px;
     border: 1px solid black;
     border-radius: 10px;
