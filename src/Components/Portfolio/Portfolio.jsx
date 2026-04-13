@@ -27,7 +27,7 @@ export default function Portfolio() {
                                     <a className='projectLink' href={project.links.live}>Demo</a>
                                     <a className='projectLink' href={project.links.repo}>GitHub</a>
                                 </div>
-                                <img className='projectImg' src={project.image} alt="" />
+                                <a href={project.links.live}><img className='projectImg' src={project.image} alt="" /></a>
                             </div>
                         </div>
                     ))}
